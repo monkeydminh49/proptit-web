@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8>
+    <title>Tiêu đề của trang</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <script>
+        console.log('Hello world');
+        let api_url = 'http://127.0.0.1:7777/';
+        // api_url = 'https://10ff-1-53-8-148.ngrok-free.app/';
+        fetch(api_url + 'books')
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                document.querySelector('.container').innerHTML = JSON.stringify(data, undefined, 2);
+            })
+
+    </script>
+</head>
+
+<body>
+    <br>
+    <div class="container">
+    </div>
+    <a href="#" style="border: 1px solid blue;">Hello World</a>
+
+
+    <span style="border-bottom: 2px solid red;">Đây là inline element.</span>
+
+</body>
+
+</html>
