@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     /* border: 1px solid black; */
 }
 
@@ -8,15 +9,49 @@
     border: 1px solid black;
 }
 
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
 .nav-wrapper {
     display: flex;
+    width: 1230px;
+    /* justify-content: space-between; */
+    align-items: center;
+    align-content: stretch;
+    height: 68px;
 }
 
 .nav-wrapper div {
     display: flex;
+    align-items: center;
+    /* height: 100%; */
 }
+
+.logo img {
+    height: 36px;
+}
+
+.menu {
+    padding-left: 36px;
+}
+
+.menu img {
+    width: 100%;
+
+}
+
 
 .search-button {
     width: 20px;
     background-color: red;
+}
+
+.search-bar {
+    display: block;
+    background-color: aqua;
+    height: 36px;
 }
