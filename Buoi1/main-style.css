@@ -30,3 +30,31 @@ main>div {
     display: flex;
     gap: 8px;
 }
+
+.menu-items-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    background-color: white;
+    margin-top: 10px;
+    /* gap: 60px; */
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 5px;
+    padding-bottom: 12px;
+
+}
+
+.menu-item-icon {
+    padding: 0px 36px;
+}
+
+.menu-item-text {
+    padding: 0px 16px;
+    text-align: center;
+}
