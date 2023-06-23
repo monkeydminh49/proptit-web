@@ -1,0 +1,28 @@
+main {
+    background-color: #F0F0F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main>div {
+    width: 1230px;
+}
+
+.ads-wrapper1 {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 5px;
+}
+
+.ad {
+    object-fit: contain;
+}
+
+.ad>img {
+    object-fit: contain;
+}
+
+.dynamic-ad {
+    grid-row: 1/3;
+}
