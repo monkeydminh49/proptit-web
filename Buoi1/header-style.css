@@ -89,6 +89,11 @@ header {
     flex-flow: column;
 }
 
+.item-text {
+    font-family: 'Poppins', sans-serif;
+    color: #969696;
+}
+
 .language-changer {
     border: 1px solid #CDCFD0;
     padding: 6px;
