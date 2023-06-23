@@ -12,17 +12,4 @@ main>div {
 .ads-wrapper1 {
     display: grid;
     grid-template-columns: auto auto;
-    grid-gap: 5px;
-}
-
-.ad {
-    object-fit: contain;
-}
-
-.ad>img {
-    object-fit: contain;
-}
-
-.dynamic-ad {
-    grid-row: 1/3;
 }
