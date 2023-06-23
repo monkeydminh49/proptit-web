@@ -12,7 +12,8 @@ main>div {
 .ads-wrapper1 {
     display: grid;
     grid-template-columns: auto auto;
-    grid-gap: 5px;
+    grid-gap: 7px;
+    padding-top: 15px;
 }
 
 .ad {
@@ -20,7 +21,8 @@ main>div {
 }
 
 .ad>img {
-    object-fit: contain;
+    border-radius: 8px;
+
 }
 
 .dynamic-ad {
