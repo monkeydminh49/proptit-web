@@ -1,6 +1,7 @@
 main {
     background-color: #F0F0F0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -16,15 +17,16 @@ main>div {
     padding-top: 15px;
 }
 
-.ad {
-    object-fit: contain;
-}
-
 .ad>img {
     border-radius: 8px;
-
 }
 
-.dynamic-ad {
-    grid-row: 1/3;
+.static-ad2 {
+    padding-top: 4px;
+}
+
+.ads-wrapper2 {
+    padding-top: 15px;
+    display: flex;
+    gap: 8px;
 }
