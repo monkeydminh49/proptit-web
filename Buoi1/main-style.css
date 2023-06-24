@@ -73,7 +73,7 @@ main>div {
 
 .flash-sale-icon {
     width: 24px;
-    margin: 10px 8px;
+    margin: 15px 10px;
 }
 
 .flash-sale-text {
@@ -109,6 +109,7 @@ main>div {
 }
 
 .flash-sale-item {
+    position: relative;
     display: flex;
     flex-direction: column;
 }
@@ -116,4 +117,52 @@ main>div {
 .sale-item-img {
     padding: 0 16px 16px 16px;
     align-self: center;
+}
+
+.sale-item-name {
+    font-size: 14px;
+    font-weight: 500;
+    /* padding: 0 16px 16px 16px; */
+}
+
+.sale-price {
+    margin-top: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #F7941E;
+}
+
+.item-price {
+    font-size: 14px;
+    font-weight: 500;
+    color: #888888;
+    padding: 5px 0;
+    text-decoration: line-through;
+}
+
+.progress {
+    text-align: center;
+    background-color: #ff8c92;
+    color: white;
+    border-radius: 16px;
+    padding: 2px 0;
+    margin-left: 2px;
+    margin-right: 15px;
+}
+
+.sale-percent {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #F7941E;
+    color: white;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
