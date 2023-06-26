@@ -19,6 +19,10 @@ textarea:focus {
     outline: none;
 }
 
+input::placeholder {
+    color: #dddddd;
+}
+
 .otl {
     border: 1px solid black;
 }
