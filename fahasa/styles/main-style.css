@@ -53,7 +53,13 @@ main>div {
 }
 
 .menu-item-icon {
+
     padding: 0px 36px;
+}
+
+.menu-item-icon>img {
+
+    min-width: 18px;
 }
 
 .menu-item-text {
@@ -103,11 +109,16 @@ main>div {
     font-weight: 600;
 }
 
+.flash-sale-wrapper {
+    /* width: 100%; */
+}
+
 .flash-sale-body {
     display: flex;
     background-color: white;
-    gap: 15px;
+    /* gap: 15px; */
     padding: 24px;
+    width: 100%;
     /* flex-direction: column; */
 }
 
@@ -116,7 +127,8 @@ main>div {
     position: relative;
     display: flex;
     flex-direction: column;
-    padding: 5px 8px;
+    padding: 5px 16px;
+    width: 500px;
 }
 
 .sale-item-img {
@@ -141,6 +153,7 @@ main>div {
     margin-top: 8px;
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .sale-price {
@@ -150,15 +163,20 @@ main>div {
 }
 
 .book-episode {
+    position: absolute;
+    bottom: 0;
+    right: 0;
     font-weight: 600;
     font-size: 11.25px;
     background-color: #92959B;
     color: #ffffff;
     text-align: center;
     padding: 0.25em 6px;
-    width: 65px;
+    width: 30%;
+    min-width: 40px;
     border-radius: 4px;
     margin-right: 10px;
+    height: 100%;
 }
 
 .item-price {
@@ -334,4 +352,71 @@ main>div {
     border: 2px solid #C92127;
     padding: 0.7em 5em;
     font-weight: 600;
+}
+
+
+
+
+@media only screen and (max-width: 1200px) {
+    .ad-right {
+        display: none;
+    }
+
+    .ads-wrapper1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    main>div {
+        width: auto;
+    }
+
+    .flash-sale-wrapper {
+        width: 100%;
+    }
+
+    .product-list-wrapper {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 992px) {
+    .menu-item-icon {
+
+        padding: 0px 20px;
+    }
+
+    main>div {
+        max-width: 750px;
+        width: auto;
+    }
+
+    .ads {
+        display: none;
+    }
+
+    .flash-sale-item:nth-child(4),
+    .flash-sale-item:nth-child(5) {
+        display: none;
+    }
+
+    .product-list-wrapper {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .menu-item {
+        width: 20%;
+    }
+
+    .menu-items-wrapper {
+        flex-flow: row wrap;
+    }
+
+    .menu-item-icon {
+
+        padding: 0px 32px;
+    }
 }
