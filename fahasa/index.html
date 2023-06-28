@@ -3,7 +3,7 @@
 
 <head>
     <meta charset=utf-8>
-    <title>Tiêu đề của trang</title>
+    <title>Fahasa clone by MinhDunk</title>
     <link rel="stylesheet" href="general-style.css">
     <link rel="stylesheet" href="header-style.css">
     <link rel="stylesheet" href="main-style.css">
@@ -23,7 +23,7 @@
                 <img src="https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ico_menu.svg" alt="" srcset="">
                 <img src="https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/icon_seemore_gray.svg" alt="">
             </div>
-            <div class="dropdown-content" id="display-none1">
+            <div class="dropdown-content" id="display-none">
                 <div class="menu-content-wrapper">
                     <div class="list-title">
                         <div class="list-title-heading">Danh mục sản phẩm</div>
@@ -57,7 +57,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="menu-content" id="display-none1">
+                    <div class="menu-content">
                         <div class="menu-content-item menu-content-item2">
                             <div class="menu-title">
                                 <img src="https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/category/ico_foreignbooks.svg"
@@ -67,7 +67,10 @@
                             <div class="menu-grid">
                                 <div class="menu-grid-item">
                                     <div class="grid-item-title">FICTION</div>
-                                    <div class="grid-item-content">Contemporary Fiction</div>
+                                    <div class="">
+                                        <a href="./contemporary-fiction/" style="text-decoration: none;"
+                                            class="grid-item-content">Contemporary Fiction</a>
+                                    </div>
                                     <div class="grid-item-content">Romance</div>
                                     <div class="grid-item-content">Fantasy</div>
                                     <div class="grid-item-content">Classics</div>
@@ -87,7 +90,7 @@
                                 <div class="menu-grid-item">
                                     <div class="grid-item-title">PERSONAL DEVELOPMENT</div>
                                     <div class="grid-item-content">Popular Psychology</div>
-                                    <div class="grid-item-content">Advice On Careers & Achieving Success</div>
+                                    <span class="grid-item-content">Advice On Careers & Achieving Success</span>
                                     <div class="grid-item-content">Personal Finance</div>
                                     <div class="grid-item-view-all">
                                         <a href="./" style="text-decoration: none;">Xem tất cả</a>
@@ -120,7 +123,7 @@
                     </div>
                 </div>
             </div>
-            <div class="dropdown-cover" id="display-none1"></div>
+            <div class="dropdown-cover" id="display-none"></div>
             <div class="search-bar-wrapper">
                 <div class="search-bar">
                     <div class="search-area">
@@ -140,6 +143,14 @@
                             alt="">
                         <span class="item-text">Thông báo</span>
                     </div>
+                    <!-- <div class="dropdown-noti">
+                        <div class="noti-heading">
+                            <img src="https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ico_noti_black.svg"
+                                alt="" class="noti-heading-icon">
+                            <span class="noti-heading-text">Thông báo</span>
+                        </div>
+                    </div> -->
+
                     <div class="item cursor-pointer">
                         <img src="https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ico_cart_gray.svg"
                             alt="">
@@ -713,10 +724,28 @@
             <div class="personalize-option fixed-icon-wrapper">
                 <img src="https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/asidebar/ico_like_white.svg?q=102309"
                     alt="" class="like-icon fixed-icon">
+                <!-- <div class="option-description option-description1">
+                    <svg class="fhs_tooltip_asidebar_bg" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="-8 -26.5625 168.562 26.5625">
+                        <path
+                            d="M 0 0 a 8 8 0 0 1 -8 -8 v -10.5625 a 8 8 0 0 1 8 -8 h 152.562 a 8 8 0 0 1 8 8 v 1.78125 l 5 4 l -5 4 v 1.78125 a 8 8 0 0 1 -8 8 Z"
+                            fill="#c92127"></path>
+                    </svg>
+                    Gợi ý dành riêng cho bạn
+                </div> -->
             </div>
             <div class="following-books fixed-icon-wrapper">
                 <img src="https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/asidebar/ico_book_fill_white.svg?q=102309"
                     alt="" class="book-icon fixed-icon">
+                <!-- <div class="option-description option-description2">
+                    <svg class="fhs_tooltip_asidebar_bg" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="-8 -26.5625 168.562 26.5625">
+                        <path
+                            d="M 0 0 a 8 8 0 0 1 -8 -8 v -10.5625 a 8 8 0 0 1 8 -8 h 152.562 a 8 8 0 0 1 8 8 v 1.78125 l 5 4 l -5 4 v 1.78125 a 8 8 0 0 1 -8 8 Z"
+                            fill="#c92127"></path>
+                    </svg>
+                    Sách đang theo dõi
+                </div> -->
             </div>
         </div>
     </main>
