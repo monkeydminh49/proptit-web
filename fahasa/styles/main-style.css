@@ -384,7 +384,7 @@ main>div {
     }
 
     main>div {
-        width: auto;
+        width: 100%;
     }
 
     .flash-sale-wrapper {
@@ -395,6 +395,9 @@ main>div {
         width: 100%;
     }
 
+    .trend-wrapper {
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 992px) {
@@ -435,4 +438,6 @@ main>div {
 
         padding: 0px 32px;
     }
+
+
 }
