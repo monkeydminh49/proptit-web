@@ -1,8 +1,17 @@
 header {
     display: flex;
-    justify-content: center;
-    /* align-items: center; */
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
     position: relative;
+}
+
+.fahasa-sale-ad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0F60A1;
+    width: 100%;
 }
 
 .nav-wrapper {
@@ -11,6 +20,7 @@ header {
     /* justify-content: space-between; */
     /* align-items: center; */
     height: 68px;
+    padding: 0 16px;
     /* position: relative; */
 }
 
@@ -266,16 +276,76 @@ header {
     border-radius: 6px;
 }
 
+.nav-mobile-wrapper {
+    display: none;
+}
+
 @media only screen and (max-width: 1200px) {}
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (max-width: 992px) {
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+    .nav-wrapper,
+    .fahasa-sale-ad {
+        display: none;
+    }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+    /* 
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 999;
+    } */
 
-/* Extra small devices (phones, 600px and down) */
+    .nav-mobile-wrapper {
+        background-color: #C92127;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        height: 93.4px;
+    }
+
+    .search-bar-mobile-wrapper {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        padding: 8px 0;
+    }
+
+    .logo-mobile {
+        max-width: 130px;
+        max-height: 30px;
+        margin-top: 5px;
+    }
+
+    .mobile-search-input-wrapper {
+        width: clamp(100px, 85%, 1000px);
+    }
+
+    .mobile-search-input-wrapper>input {
+        border-radius: 6px;
+        padding: 0 16px;
+        height: 33px;
+    }
+
+    .mobile-menu-icon {
+        height: 34px;
+        width: 34px;
+        margin: 0 8px;
+    }
+
+    .mobile-cart-icon,
+    .mobile-customer-icon {
+        height: 24px;
+        width: 24px;
+        margin: 0 4px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {}
+
+@media only screen and (max-width: 600px) {}
+
 @media only screen and (max-width: 600px) {}
