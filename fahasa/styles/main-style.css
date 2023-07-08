@@ -59,7 +59,7 @@ main>div {
 
 .menu-item-icon>img {
 
-    min-width: 18px;
+    min-width: 45px;
 }
 
 .menu-item-text {
@@ -398,6 +398,10 @@ main>div {
     .trend-wrapper {
         width: 100%;
     }
+
+    .trend-body {
+        overflow: hidden;
+    }
 }
 
 @media only screen and (max-width: 992px) {
@@ -426,6 +430,12 @@ main>div {
 }
 
 @media only screen and (max-width: 768px) {
+    main>div {
+        max-width: 750px;
+        width: auto;
+        /* border: 1px solid red; */
+    }
+
     .menu-item {
         width: 20%;
     }

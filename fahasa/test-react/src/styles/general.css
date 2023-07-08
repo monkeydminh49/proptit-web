@@ -5,10 +5,14 @@
     /* border: 1px solid black; */
 }
 
+a {
+    text-decoration: none;
+}
+
 input,
 select,
 textarea {
-    width: 100%;
+    /* width: 100%; */
     background-color: white;
     color: #545759;
     border: white;

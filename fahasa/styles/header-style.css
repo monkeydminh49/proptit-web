@@ -281,7 +281,11 @@ header {
     display: none;
 }
 
-@media only screen and (max-width: 1200px) {}
+@media only screen and (max-width: 1200px) {
+    .nav-wrapper {
+        width: 100%;
+    }
+}
 
 @media only screen and (max-width: 992px) {
 
@@ -314,7 +318,7 @@ header {
         padding: 8px 0;
     }
 
-    .logo-mobile {
+    .logo-mobile-icon {
         max-width: 130px;
         max-height: 30px;
         margin-top: 5px;
