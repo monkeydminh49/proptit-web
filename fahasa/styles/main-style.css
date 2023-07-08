@@ -55,10 +55,12 @@ main>div {
 .menu-item-icon {
 
     padding: 0px 36px;
+    display: flex;
+    justify-content: center;
 }
 
 .menu-item-icon>img {
-
+    width: 40%;
     min-width: 45px;
 }
 
@@ -402,12 +404,18 @@ main>div {
     .trend-body {
         overflow: hidden;
     }
+
+    .menu-item-icon {
+        padding: 0;
+    }
+
+
 }
 
 @media only screen and (max-width: 992px) {
     .menu-item-icon {
 
-        padding: 0px 20px;
+        /* padding: 0px 20px; */
     }
 
     main>div {
