@@ -1,0 +1,301 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Poppins, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.otl {
+    border: 1px solid red;
+}
+
+.background-gray {
+    background-color: #cccccc;
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+header {
+    position: relative;
+    background-image: url("./media/img/images.jpeg");
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header-content-wrapper {
+
+    width: 45%;
+    padding: 100px 150px 0 0;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-item>a {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #4e4e4e;
+}
+
+.btn-search {
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.content-wrapper {
+    padding: 25% 0;
+}
+
+.content-title {
+    font-size: 4.5rem;
+    font-weight: 500;
+    color: #1c2579;
+    margin-bottom: 20px;
+}
+
+.content-subtitle {
+    width: 80%;
+    font-size: 1.1rem;
+    word-spacing: 0.6rem;
+    font-weight: 300;
+    color: #4e4e4e;
+    margin-bottom: 30px;
+}
+
+.readmore {
+    color: #4e4e4e;
+}
+
+.infor-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 150px;
+}
+
+.infor-nav-item {
+    display: flex;
+    width: 16.6666%;
+    align-items: center;
+}
+
+.infor-number {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #1c2579;
+}
+
+.infor-splitter {
+    width: 2px;
+    margin: 0 15px;
+    background-color: #1c2579;
+    height: 100%;
+}
+
+.infor-title {
+    font-size: 1.3rem;
+    font-weight: lighter;
+    color: #4e4e4e;
+}
+
+.grid-content-container {
+    display: block;
+}
+
+.grid-content {
+    display: flex;
+}
+
+.grid-content-item {
+    display: grid;
+    width: 50%;
+    padding: 150px 100px;
+}
+
+.grid-content-wrapper {
+    width: 60%;
+}
+
+.grid-content-wrapper-2 {
+    justify-self: flex-end;
+}
+
+.grid-content-title {
+    width: 60%;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.grid-content-subtitle {
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: #4e4e4e;
+    margin-bottom: 30px;
+}
+
+.team-introduction-container {
+    padding: 100px 100px 50px 100px;
+}
+
+.greet-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.greet-item {
+    width: 50%;
+}
+
+.greet-title {
+    font-size: 4.5rem;
+    font-weight: 600;
+    color: #1c2579;
+}
+
+.greet-content {
+    padding: 0 5% 0 0;
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: #4e4e4e;
+}
+
+.team-member-wrapper {
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.team-member-title {
+    display: inline-block;
+    border: 1.5px solid #4e4e4e;
+    padding: 20px 50px;
+    font-size: 1.5rem;
+    color: #303030;
+}
+
+.member-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 2.5%;
+}
+
+.member-item {
+    width: 25%;
+}
+
+.member-image>img {
+    width: 100%;
+}
+
+.member-title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #1c2579;
+    margin: 20px 0 10px 0;
+}
+
+.member-name {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.member-detail {
+    color: #4e4e4e;
+    width: 80%;
+    text-align: justify;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    height: 80px;
+}
+
+.member-readmore {
+    text-decoration: underline;
+    color: #4e4e4e;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.questioning-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+    background-color: rgb(173, 250, 224);
+}
+
+.question-title {
+    font-size: 1.4rem;
+    color: #1c2579;
+    margin-bottom: 10px;
+}
+
+.question-subtitle {
+    font-size: 1.4rem;
+    color: #5f5f5f;
+}
+
+footer {
+    background-color: #d1d1d1;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content-container {
+    width: 1440px;
+    padding: 80px 0 50px 0;
+}
+
+.company-name {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.footer-content-wrapper {
+    display: flex;
+}
+
+.footer-content {
+    width: 50%;
+}
+
+.contact-wrapper {
+    margin-bottom: 20px;
+}
+
+.contact-title {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.contact-letter {
+    font-weight: bold;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+}
