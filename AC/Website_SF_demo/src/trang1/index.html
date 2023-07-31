@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel=stylesheet type="text/css" href="style.css">
+    <title>Website_SF_demo</title>
+</head>
+
+<body>
+
+    <script>
+        // function clickBody() {
+        //     const sideBar = document.getElementById("nav-wrapper-hidden");
+        //     const displayStyle = sideBar.style.display;
+        //     if (sideBar.classList.contains("show-menu")) {
+        //         // sideBar.classList.remove("show-menu");
+        //     }
+        //     // sideBar.style.display = displayStyle == "block" ? "none" : "block";
+        // }
+        // document.body.addEventListener("click", clickBody)
+        function toggleSideBar() {
+            const sideBar = document.getElementById("nav-wrapper-hidden");
+            const displayStyle = sideBar.style.display;
+
+            sideBar.style.display = displayStyle == 'none' ? 'block' : 'none';
+            // sideBar.classList.add("show-menu")
+        }
+    </script>
+    <header>
+        <div class="logo">
+            <img src="./media/img/logo1.svg" alt="">
+        </div>
+        <div class="header-content-wrapper">
+            <div class="bar-icon" style="display: none;" id="bar">
+                <a href="javascript:void(0);" class="icon" onclick="toggleSideBar()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            <div class="nav-wrapper" id="nav-wrapper-hidden">
+
+                <div class="nav-item">
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav-item">
+                    <a href="#">About Us</a>
+                </div>
+                <div class="nav-item">
+                    <a href="#">Services</a>
+                </div>
+                <div class="nav-item">
+                    <a href="#">Contact</a>
+                </div>
+                <div class="nav-item btn-search" id="search">
+                    <button>
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="content-wrapper">
+                <h1 class="content-title">
+                    The Best<br />
+                    Corprorate Business
+                </h1>
+                <p class="content-subtitle">
+                    Systematic Functions, formerly mFunction, was established in 2016 to develop and implement the
+                    mStore platform
+                </p>
+                <a href="" class="readmore">Read more
+                    <i class='fas fa-arrow-right'></i>
+                </a>
+
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="infor-nav">
+            <div class="infor-nav-item">
+                <div class="infor-number">1</div>
+                <div class="infor-splitter"></div>
+                <div class="infor-title">About Us</div>
+            </div>
+            <div class="infor-nav-item">
+                <div class="infor-number">2</div>
+                <div class="infor-splitter"></div>
+                <div class="infor-title">What We Do</div>
+            </div>
+            <div class="infor-nav-item">
+                <div class="infor-number">3</div>
+                <div class="infor-splitter"></div>
+                <div class="infor-title">Our Activities</div>
+            </div>
+            <div class="infor-nav-item">
+                <div class="infor-number">4</div>
+                <div class="infor-splitter"></div>
+                <div class="infor-title">Team</div>
+            </div>
+            <div class="infor-nav-item">
+                <div class="infor-number">5</div>
+                <div class="infor-splitter"></div>
+                <div class="infor-title">Current Projects</div>
+            </div>
+            <div class="infor-nav-item">
+                <div class="infor-number">6</div>
+                <div class="infor-splitter"></div>
+                <div class="infor-title">Current Asset</div>
+            </div>
+        </div>
+        <div class="grid-contain-container">
+            <div class="grid-content">
+                <div class="grid-content-item grid-image-wrapper background-gray">
+                    <img src="" alt="">
+                </div>
+                <div class="grid-content-item">
+                    <div class="grid-content-wrapper grid-content-wrapper-1">
+                        <h2 class="grid-content-title">
+                            What is really work when it comes to digital and AI transformations?
+                        </h2>
+                        <p class="grid-content-subtitle">
+                            Rewired, a new book from McKinsey authors, can to help
+                            organizations dig their way out of technology debt and digitize
+                            critical products and processes.
+                        </p>
+                        <a href="" class="readmore">Read more
+                            <i class='fas fa-arrow-right'></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-content">
+                <div class="grid-content-item">
+                    <div class="grid-content-wrapper grid-content-wrapper-2">
+                        <h2 class="grid-content-title">
+                            What is really work when it comes to digital and AI transformations?
+                        </h2>
+                        <p class="grid-content-subtitle">
+                            Rewired, a new book from McKinsey authors, can to help
+                            organizations dig their way out of technology debt and digitize
+                            critical products and processes.
+                        </p>
+                        <a href="" class="readmore">Read more
+                            <i class='fas fa-arrow-right'></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="grid-content-item grid-image-wrapper background-gray">
+                    <img src="" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="team-introduction-container">
+            <div class="greet-container">
+                <div class="greet-item greet-title">
+                    Meet The Team
+                </div>
+                <div class="greet-item greet-content">We have a history of building and launching businesses
+                    for the world's leading organizations. Explore a sampling of our work and
+                    see the impact we've made for our clients.
+                </div>
+            </div>
+
+            <div class="team-member-wrapper">
+                <span class="team-member-title">TEAM MEMBER</span>
+            </div>
+
+            <div class="member-list">
+                <div class="member-item-container">
+                    <div class="member-item">
+                        <div class="member-image">
+                            <img src="./media/img/member1.png" alt="">
+                        </div>
+
+                        <div class="member-title">Chief Executive Officer</div>
+                        <div class="member-name">Bui Viet Phuong</div>
+                        <div class="member-detail">
+                            With a broad background in different industries, international and
+                            local business and cultural expertise, plus a very large network,
+                            .Mr Phuong always keeps customers and operational excellence in focus
+                            for all of his ventures.
+                        </div>
+
+                    </div>
+                    <div class="member-readmore" id="readmore1">
+                        <a href="" class="">Read more</a>
+                    </div>
+                </div>
+                <div class="member-item-container">
+                    <div class="member-item">
+                        <div class="member-image">
+                            <img src="./media/img/member2.png" alt="">
+                        </div>
+                        <div class="member-title">Vice CEO of Business Development</div>
+                        <div class="member-name">Tran Dong Giang</div>
+                        <div class="member-detail">
+                            With 15 years of experience in telecommunications, information
+                            technology industries and e-commerce, Mr Giang has implemented many
+                            projects under the leading groups in Vietnam, including Viettel Global.
+                        </div>
+
+                    </div>
+                    <div class="member-readmore">
+                        Read more
+                    </div>
+                </div>
+
+                <div class="member-item-container">
+                    <div class="member-item">
+                        <div class="member-image">
+                            <img src="./media/img/member3.png" alt="">
+                        </div>
+                        <div class="member-title">Chief People Officer</div>
+                        <div class="member-name">Tran Thi Hang An</div>
+                        <div class="member-detail">
+                            With many years of being HR Director in large technology companies
+                            such as VINID, Tiki, and Momo, Ms. An has intensive knowledge and
+                            understanding of human resources.
+                        </div>
+
+                    </div>
+                    <div class="member-readmore">
+                        Read more
+                    </div>
+                </div>
+
+                <div class="member-item-container">
+                    <div class="member-item">
+                        <div class="member-image">
+                            <img src="./media/img/member4.png" alt="">
+                        </div>
+                        <div class="member-title">Head of Engineering</div>
+                        <div class="member-name">Mr. Toan Nguyen</div>
+                        <div class="member-detail">
+                            Our lead software architect has earned his merits developing
+                            technology innovations for the biggest names in aerospace, food.
+                        </div>
+
+                    </div>
+                    <div class="member-readmore">
+                        <a href="">Read more</a>
+                    </div>
+                </div>
+
+                <script>
+                    const memberList = document.querySelectorAll('.member-title');
+
+                    let maxHeight = 0;
+
+                    memberList.forEach((member) => {
+                        maxHeight = Math.max(member.offsetHeight, maxHeight)
+                    })
+
+                    console.log(maxHeight)
+
+                    memberList.forEach((member) => {
+                        member.style.height = maxHeight
+                    })
+                </script>
+
+            </div>
+        </div>
+
+        <div class="questioning-wrapper">
+            <div class="question-title">
+                <h2>Interested in working with us?</h2>
+            </div>
+            <div class="question-subtitle">
+                Learn more about Systematic Functions or drop us a line
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content-container">
+            <div class="company-name">
+                Systematic Functions
+            </div>
+            <div class="footer-content-wrapper">
+                <div class="footer-content footer-content-1">
+
+                    <div class="contact-wrapper contact-wrapper-vn">
+                        <div class="contact-title">
+                            Vietnam Office:
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-letter">A</span>
+                            <span class="contact-detail">
+                                : 29BT1, Me Tri Ha urban area, Nam Tu Liem, Ha Noi
+                            </span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-letter">P</span>
+                            <span class="contact-detail">
+                                : (+84) 24 226 56789
+                            </span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-letter">F</span>
+                            <span class="contact-detail">
+                                : Office@mfunctions.com
+                            </span>
+                        </div>
+
+                    </div>
+                    <div class="contact-wrapper contact-wrapper-myanmar">
+                        <div class="contact-title">
+                            Myanmar Office:
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-letter">A</span>
+                            <span class="contact-detail">
+                                : R905, Block D, Pearl Condo, Bahan Township, Yangon
+                            </span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-letter">P</span>
+                            <span class="contact-detail">
+                                : (+95) 969 666 8899
+                            </span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-letter">F</span>
+                            <span class="contact-detail">
+                                : cong.nguyen@mfunctions.com
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="footer-content footer-content-2">
+                    <div class="footer-nav">
+                        <div class="footer-nav-item">
+                            <a href="" class="">Hướng dẫn thanh toán</a>
+                        </div>
+                        <div class="footer-nav-item">
+                            <a href="" class="">Câu hỏi thường gặp</a>
+                        </div>
+                        <div class="footer-nav-item">
+                            <a href="" class="">Điều khoản dịch vụ</a>
+                        </div>
+                        <div class="footer-nav-item">
+                            <a href="" class="">Chính sách bảo mật</a>
+                        </div>
+                    </div>
+                    <div class="footer-brand-logo">
+                        <a href="" class="">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                        <a href="" class="">
+                            <i class="fa fa-facebook-square"></i>
+                        </a>
+                        <a href="" class="">
+                            <i class="fa fa-linkedin-square"></i>
+                        </a>
+                        <a href="" class="">
+                            <i class="fa fa-youtube-play"></i>
+                        </a>
+                        <a href="" class="">
+                            <i class="fa fa-globe"></i>
+                        </a>
+                    </div>
+                    <div class="inc">
+                        © 2022-2023 Preply Inc.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
