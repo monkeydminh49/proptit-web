@@ -402,7 +402,7 @@ main>div {
     }
 
     .trend-body {
-        overflow: hidden;
+        overflow: scroll;
     }
 
     .menu-item-icon {

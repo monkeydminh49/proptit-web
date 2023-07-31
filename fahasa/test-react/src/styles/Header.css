@@ -306,6 +306,10 @@
         height: 93.4px;
     }
 
+    .mobile-search-input-wrapper>input {
+        width: 100%;
+    }
+
     .search-bar-mobile-wrapper {
         display: flex;
         align-items: center;
