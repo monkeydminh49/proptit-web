@@ -1,7 +1,8 @@
 # VueJS
+
 ---
 
-# II. Computed Properties
+# III. Computed Properties
 
 `computed` gần giống với methods bởi đều dùng để khai báo các function. Tuy nhiên, computed properties sẽ được cache lại và chỉ được tính toán lại khi các reactive dependencies của nó thay đổi.
 
@@ -9,15 +10,15 @@
 export default {
   data() {
     return {
-      firstName: 'John',
-      lastName: 'Doe'
+      firstName: "John",
+      lastName: "Doe",
     }
   },
   computed: {
     fullName() {
       return `${this.firstName} ${this.lastName}`
-    }
-  }
+    },
+  },
 }
 ```
 
@@ -30,4 +31,3 @@ export default {
   </div>
 </template>
 ```
-
