@@ -542,6 +542,13 @@ video {
   position: absolute;
 }
 
+<<<<<<< HEAD:AC/Website_SF_demo/Trang2/dist/output.css
+=======
+.relative {
+  position: relative;
+}
+
+>>>>>>> 97fc35a938891ecbc15add63522ff417a267127b:AC/Website_SF_demo/src/Trang2/dist/output.css
 .right-6 {
   right: 1.5rem;
 }
@@ -550,6 +557,69 @@ video {
   top: 1.5rem;
 }
 
+<<<<<<< HEAD:AC/Website_SF_demo/Trang2/dist/output.css
+=======
+.right-0 {
+  right: 0px;
+}
+
+.-right-4 {
+  right: -1rem;
+}
+
+.-right-9 {
+  right: -2.25rem;
+}
+
+.-right-10 {
+  right: -2.5rem;
+}
+
+.-right-16 {
+  right: -4rem;
+}
+
+.-right-40 {
+  right: -10rem;
+}
+
+.-right-52 {
+  right: -13rem;
+}
+
+.-right-56 {
+  right: -14rem;
+}
+
+.-right-72 {
+  right: -18rem;
+}
+
+.-right-60 {
+  right: -15rem;
+}
+
+.-left-28 {
+  left: -7rem;
+}
+
+.-left-10 {
+  left: -2.5rem;
+}
+
+.-left-16 {
+  left: -4rem;
+}
+
+.z-20 {
+  z-index: 20;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+>>>>>>> 97fc35a938891ecbc15add63522ff417a267127b:AC/Website_SF_demo/src/Trang2/dist/output.css
 .mb-1 {
   margin-bottom: 0.25rem;
 }
@@ -590,6 +660,13 @@ video {
   height: 100%;
 }
 
+<<<<<<< HEAD:AC/Website_SF_demo/Trang2/dist/output.css
+=======
+.h-\[468px\] {
+  height: 468px;
+}
+
+>>>>>>> 97fc35a938891ecbc15add63522ff417a267127b:AC/Website_SF_demo/src/Trang2/dist/output.css
 .w-2\/3 {
   width: 66.666667%;
 }
@@ -607,6 +684,13 @@ video {
   max-width: min-content;
 }
 
+<<<<<<< HEAD:AC/Website_SF_demo/Trang2/dist/output.css
+=======
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+>>>>>>> 97fc35a938891ecbc15add63522ff417a267127b:AC/Website_SF_demo/src/Trang2/dist/output.css
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -644,6 +728,13 @@ video {
   row-gap: 0.5rem;
 }
 
+<<<<<<< HEAD:AC/Website_SF_demo/Trang2/dist/output.css
+=======
+.overflow-hidden {
+  overflow: hidden;
+}
+
+>>>>>>> 97fc35a938891ecbc15add63522ff417a267127b:AC/Website_SF_demo/src/Trang2/dist/output.css
 .whitespace-nowrap {
   white-space: nowrap;
 }
@@ -960,6 +1051,17 @@ video {
     margin-bottom: 2rem;
   }
 
+<<<<<<< HEAD:AC/Website_SF_demo/Trang2/dist/output.css
+=======
+  .\32xl\:block {
+    display: block;
+  }
+
+  .\32xl\:hidden {
+    display: none;
+  }
+
+>>>>>>> 97fc35a938891ecbc15add63522ff417a267127b:AC/Website_SF_demo/src/Trang2/dist/output.css
   .\32xl\:gap-40 {
     gap: 10rem;
   }
