@@ -6,19 +6,41 @@ import TodoItem from "./view/TodoItem.vue";
 import Card from "./components/Card.vue";
 
 const showEditModal = ref(false);
-const modal = ref(1);
+const modal = ref(null);
 const listTask = ref([]);
 const taskId = ref(1);
+let taskModel = {};
 function addTask() {
   showEditModal.value = true;
 }
 
 window.onclick = (event) => {
-  // console.log(event.target);
-  if (modal !== null && event.target == modal.value.modal) {
-    showEditModal.value = false;
+  // console.log(modal.value.modal);
+  if (modal != null && showEditModal.value) {
+    if (event.target === modal.value.modal) {
+      taskModel = {};
+      showEditModal.value = false;
+    }
+    // showEditModal.value = false;
   }
 };
+
+function saveNewTask(task) {
+  // console.log(task);
+  listTask.value.push(task);
+  taskModel = {};
+}
+
+function saveEditedTask(editedTask) {
+  listTask.value.forEach((task) => {
+    if (task.id === taskModel.id) {
+      task.title = editedTask.title;
+      task.description = editedTask.description;
+      task.time = editedTask.time;
+    }
+  });
+  taskModel = {};
+}
 
 function saveTask() {
   const task = {
@@ -27,19 +49,36 @@ function saveTask() {
     description: modal.value.descriptionText,
     time: modal.value.time,
   };
-  console.log(task);
-  listTask.value.push({
-    id: taskId.value++,
-    title: modal.value.titleText,
-    description: modal.value.descriptionText,
-    time: modal.value.time,
-  });
+  if (taskModel.id) {
+    saveEditedTask(task);
+  } else {
+    saveNewTask(task);
+  }
+
+  showEditModal.value = false;
+}
+
+function editTodoItem(id) {
+  const task = listTask.value.find((task) => task.id === id);
+  taskModel = { ...task, editingMode: true };
+  showEditModal.value = true;
+}
+
+function deleteTask(id) {
+  listTask.value = listTask.value.filter((task) => task.id !== id);
+  taskModel = {};
   showEditModal.value = false;
 }
 </script>
 
 <template>
-  <TaskModal ref="modal" v-if="showEditModal" @save="saveTask" />
+  <TaskModal
+    ref="modal"
+    v-if="showEditModal"
+    @save="saveTask"
+    v-bind="taskModel"
+    @delete="deleteTask(taskModel.id)"
+  />
   <div class="w-[600px] rounded-xl bg-[#F9F9F9] px-6 py-6">
     <Header @addTask="addTask" class="mb-8" />
     <ul v-if="listTask.length > 0">
@@ -74,7 +113,12 @@ function saveTask() {
             </div>
           </div>
         </Card> -->
-        <TodoItem class="mb-4" :key="task.id" v-bind="task" />
+        <TodoItem
+          class="mb-4"
+          :key="task.id"
+          v-bind="task"
+          @edit="editTodoItem(task.id)"
+        />
       </li>
     </ul>
     <div v-else class="">Add some task</div>
